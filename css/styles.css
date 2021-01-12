@@ -49,6 +49,8 @@ li{ list-style: none; }
 
 a{ text-decoration: none; }
 
+/* Cabeçalho */
+
 header{
   background-color: #222222d3;
   width: 100%;
@@ -74,6 +76,8 @@ header li{ margin: 0 15px; }
 
 header li:nth-child(1){ margin-left: 0; }
 header li:nth-child(4){ margin-right: 0; }
+
+/* Hero */
 
 .hero{
   background-image: url(../img/hero.jpg);
@@ -109,6 +113,8 @@ header li:nth-child(4){ margin-right: 0; }
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
+
+/* Conheça o hotel */
 
 .conheca-o-hotel{
   display: flex;
@@ -171,4 +177,84 @@ header li:nth-child(4){ margin-right: 0; }
   .hero h2{ font-size: 1.5rem; }
 
   .conheca-o-hotel .grid .small,.conheca-o-hotel .grid .large{ flex-basis: 100%; }
+
+}
+
+/* Características */
+
+.caracteristicas{
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.caracteristicas h3{
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.caracteristicas p{
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: var(--text-color-secondary);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.caracteristicas hr{
+  width: 200px;
+  height: 2px;
+  background-color: #FFF;
+  margin-bottom: 70px;
+  border: none;
+}
+
+.caracteristicas .grid{ width: 100%; display: flex; }
+
+.caracteristicas .grid li{ 
+  padding: 30px 30px; 
+  text-align: center;
+  box-shadow: 0 0 1em #000000a9;
+  justify-content: space-between;
+  width: 33%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.caracteristicas .grid li i{
+  color: #c3c63b;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.caracteristicas .grid li h4{
+  font-size: 1.5rem;
+  color: #c3c63b;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.caracteristicas .grid li p{ 
+  color: var(--text-color-secondary); 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media(max-width: 860px){
+  .caracteristicas .grid{
+    flex-direction: column;
+  }
+
+  .caracteristicas .grid li{
+    width: 100%;
+  }
 }
