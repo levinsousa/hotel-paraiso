@@ -4,9 +4,7 @@
    
    <p align="center">
       The "Hotel Paraíso", developed during the first year of the IT course.
-      
       Created to put into practice the knowledge acquired in class during the discipline of HTML and CSS. 🙂 
-      
    </p>
    <br>
 
